@@ -11,11 +11,12 @@ class Car:
 # WRITE YOUR SOLUTION HERE:
 def fastest_car(cars: list):
     fast_car = cars[0].top_speed
+    fast_car_name = cars[0].make 
     for car in cars:
         if car.top_speed > fast_car:
             fast_car = car.top_speed
             fast_car_name = car.make
-            return fast_car_name
+    return fast_car_name
             
 
 if __name__ == "__main__":
